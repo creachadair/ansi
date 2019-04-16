@@ -21,5 +21,5 @@ func main() {
 	}
 
 	c := ansi.NewCoder(os.Stdout)
-	io.WriteString(c.SetIf(']', "0;", 0, "\007"), *setTitle)
+	io.WriteString(c.Set(']', "0;", 0, "\007"), *setTitle)
 }
