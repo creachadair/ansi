@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"bitbucket.org/creachadair/ansi/ansi"
+	"github.com/creachadair/ansi/ansi"
 )
 
 // TODO(fromberger): Other useful things.
