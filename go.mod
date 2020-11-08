@@ -3,6 +3,6 @@ module github.com/creachadair/ansi
 go 1.12
 
 require (
-	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
-	golang.org/x/sys v0.0.0-20200916084744-dbad9cb7cb7a // indirect
+	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
+	golang.org/x/sys v0.0.0-20201107080550-4d91cf3a1aaf // indirect
 )
