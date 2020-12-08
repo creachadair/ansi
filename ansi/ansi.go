@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"io"
 
-	"golang.org/x/crypto/ssh/terminal"
+	"golang.org/x/term"
 )
 
 // A Coder wraps an io.Writer and adds features for emitting ANSI escape
@@ -75,7 +75,7 @@ func NewCoder(w io.Writer) *Coder {
 	if f, ok := w.(interface {
 		Fd() uintptr
 	}); ok {
-		env.isTerm = terminal.IsTerminal(int(f.Fd()))
+		env.isTerm = term.IsTerminal(int(f.Fd()))
 	}
 	return env
 }
