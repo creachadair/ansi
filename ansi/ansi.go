@@ -24,7 +24,7 @@ func (c Coder) Write(data []byte) (int, error) { return c.w.Write(data) }
 
 // Esc emits an escape sequence to w having the form:
 //
-//    ESC start [data]
+//	ESC start [data]
 //
 // It returns the number of bytes written and any error from w.Write.
 // If start == 0 this is equivalent to io.WriteString(w, data).
@@ -43,7 +43,7 @@ func Esc(w io.Writer, start byte, data string) (int, error) {
 // Set returns a writer that unconditionally wraps each write with the
 // specified escape sequence having the form:
 //
-//    ESC start [prefix] <data> [suffix] [ESC end]
+//	ESC start [prefix] <data> [suffix] [ESC end]
 //
 // If prefix == "" the prefix is omitted.
 // If suffix == "" the suffix is omitted.
