@@ -1,6 +1,6 @@
 module github.com/creachadair/ansi
 
-go 1.19
+go 1.20
 
 require golang.org/x/term v0.11.0
 
